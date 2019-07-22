@@ -91,6 +91,7 @@ namespace LigitoVinciunoUzduotis
         }
 
     }
+
     class lentele
     {
         public int nr { get; set; }

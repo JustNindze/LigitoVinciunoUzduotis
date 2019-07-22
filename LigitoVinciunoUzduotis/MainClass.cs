@@ -19,11 +19,11 @@ namespace LigitoVinciunoUzduotis
         {
             Console.WriteLine("Programa paleista\n");
 
-            List<lentele> lenteleList = new List<lentele>();
+            List<Lentele> lenteleList = new List<Lentele>();
 
             DateTime currentDate = DateTime.Today;
 
-            lenteleList.Add(new lentele
+            lenteleList.Add(new Lentele
             {
                 nr = 1,
                 data = currentDate,
@@ -58,7 +58,7 @@ namespace LigitoVinciunoUzduotis
 
                 DateTime data = new DateTime(currentDate.Year, currentDate.Month, correctMokejimoDiena);
 
-                lenteleList.Add(new lentele
+                lenteleList.Add(new Lentele
                 {
                     nr = n + 2,
                     data = data,
@@ -74,12 +74,12 @@ namespace LigitoVinciunoUzduotis
             Console.WriteLine("Lentelė:\n");
             Console.WriteLine("Nr.\tData\t\tPastabos");
 
-            foreach (lentele element in lenteleList)
+            foreach (Lentele element in lenteleList)
             {
-                Console.WriteLine("{0}\t{1}\t{2}", element.nr, element.data.ToString("yyyy-MM-dd"), element.pastabos);
+                Console.WriteLine("{0}\t{1}\t{2}\n", element.nr, element.data.ToString("yyyy-MM-dd"), element.pastabos);
             }
 
-            Console.WriteLine("\nApskaičiuotas BVKKMN: {0}\n", bvkkmn);
+            Console.WriteLine("Apskaičiuotas BVKKMN: {0}\n", bvkkmn);
         }
 
         //suskaiciuoja ir grazina paskolos imoka pagal pastovaus dydzio mokejimus ir pastovu palukanu procenta
@@ -92,7 +92,7 @@ namespace LigitoVinciunoUzduotis
 
     }
 
-    class lentele
+    class Lentele
     {
         public int nr { get; set; }
         public DateTime data { get; set; }

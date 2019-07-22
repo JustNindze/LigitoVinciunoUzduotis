@@ -76,10 +76,10 @@ namespace LigitoVinciunoUzduotis
 
             foreach (Lentele element in lenteleList)
             {
-                Console.WriteLine("{0}\t{1}\t{2}\n", element.nr, element.data.ToString("yyyy-MM-dd"), element.pastabos);
+                Console.WriteLine("{0}\t{1}\t{2}", element.nr, element.data.ToString("yyyy-MM-dd"), element.pastabos);
             }
 
-            Console.WriteLine("Apskaičiuotas BVKKMN: {0}\n", bvkkmn);
+            Console.WriteLine("\nApskaičiuotas BVKKMN: {0}\n", bvkkmn);
         }
 
         //suskaiciuoja ir grazina paskolos imoka pagal pastovaus dydzio mokejimus ir pastovu palukanu procenta

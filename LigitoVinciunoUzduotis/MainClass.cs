@@ -72,7 +72,7 @@ namespace LigitoVinciunoUzduotis
             double bvkkmn = Financial.XIrr(palukanosIrPaskolosList, datosList, 0) * 100;
 
             Console.WriteLine("Lentelė:\n");
-            Console.WriteLine("Nr.\tData\t\tPastabos");
+            Console.WriteLine("Nr\tData\t\tPastabos");
 
             foreach (Lentele element in lenteleList)
             {
